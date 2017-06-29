@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+      <head>
+           <title>signup module</title>
+            <style>
+                 body {
+                         background-color:blue;
+                         
+                         
+                       }
+                 label
+                       {
+                          color:red;
+                       }
+                 button {
+                          color:red;
+                          border:1px solid red;
+                          
+                        }
+            </style>
+           <script>
+                /*user name and password checking function*/
+                function validateemail()
+                {
+                   var inputEmail=document.getElementById("email").value;
+                   var inputPwd=document.getElementById("pwd").value;
+                   var x="abiramibharanidharan@gmail.com";
+                   var y=123456;
+                   if(inputEmail==x && inputPwd==y)
+                   {
+                     location.href='main.html';
+                   }
+                   else
+                   {
+                      document.getElementById("demo").innerHTML="enter valid user name and password";
+                   }
+                 }
+          </script>
+       </head>
+       <body>
+             <h3><center>MySelfie Tech</center></h3>
+             <label> Name:</label>
+             <input type="text"  placeholder="name" id="name"></input> </br></br>
+             <label>Email:</label>
+             <input type="text" placeholder="email" id="email"></input></br></br>           
+             <label>Password:</label>
+             <input type="password" placeholder="password" id="pwd"></input></br></br>
+             <button onclick="validateemail()" id="submit">Submit Query</button></br></br></br>
+             <button onclick="location.href='assignment 8.2.html'" id="back">Login Page</button></br>
+             <p id="demo"></p>
+        </body>
+</html>
